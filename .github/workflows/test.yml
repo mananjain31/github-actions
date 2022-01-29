@@ -4,9 +4,9 @@ jobs:
   build-app:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        with:
+      - uses: actions/checkout@v2 # this clones the current repo in the docker instance running this action
+      - uses: actions/setup-node@v2 # this installs nodejs with yarn
+        with: 
           node-version: 14
       - name: Install node_modules
         run: yarn
