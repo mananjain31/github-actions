@@ -25,6 +25,7 @@ function _runThese(commands, index)
     command.on('exit', (code, signal)=>{
         console.log('Command : ', commandArr);
         console.log('Code:',code, 'Signal:', signal);
+        if(code !== 0) throw Error('code not 0');
         _runThese(commands, index+1)
     })
 }
