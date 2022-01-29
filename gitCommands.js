@@ -5,8 +5,8 @@ if(process.argv.length < 3) throw Error('provide commit msg');
 
 const associateBindings=childProcess=>{
     childProcess.on('error', data=>console.log(data));
-    childProcess.stderr.on('data', data=>console.log('Error:',data));
-    childProcess.stdout.on('data', data=>console.log('Data:',data));
+    childProcess.stderr.on('data', data=>console.log('Error:',data.toString()));
+    childProcess.stdout.on('data', data=>console.log('Data:',data.toString()));
 }
 associateBindings(add);
 
