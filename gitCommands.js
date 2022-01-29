@@ -36,7 +36,7 @@ function runThese(commands)
 }
 runThese([
     'git add .',
-    ['git', 'commit', '-m', `"${process.argv.slice(2).join(' ')}"`],
+    ['git', 'commit', '-m', `${process.argv.slice(2).join(' ')}`],
     'git push',
 ]);
 
