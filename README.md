@@ -31,8 +31,7 @@ yarn add vercel --dev
 ```
 create a token in Vercel and copy it to a secured place
 ```
-cd build
-yarn vc --token:[your vercel token]
+yarn vc --token:[your vercel token] # and set source directory to ./build
 ```
 now copy `projectId` and `orgId` from `.vercel/project.json` to a secured place
 

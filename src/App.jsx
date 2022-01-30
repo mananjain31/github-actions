@@ -10,7 +10,7 @@ function App() {
 				<p>
 					Edit <code>src/App.jsx</code> and save to reload!
 				</p>
-				<span className="App-link">Hello from mananjain31 :)</span>
+				<span className="App-link">Hello from mananjain31 :) <a href="https://github.com/mananjain31/github-actions">Git Repo</a></span>
 			</header>
 		</div>
 	)
