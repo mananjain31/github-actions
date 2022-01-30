@@ -3,6 +3,10 @@ on: [push]
 jobs:
   build-app:
     runs-on: ubuntu-latest
+    env:
+      VERCEL_PROJECT_ID: %{{ secrets.VERCEL_PROJECT_ID }}
+      VERCEL_TOKEN: %{{ secrets.VERCEL_TOKEN }}
+      VERCEL_ORG_ID: %{{ secrets.VERCEL_ORG_ID }}
     steps:
       - uses: actions/checkout@v2 # this clones the current repo in the docker instance running this action
       - uses: actions/setup-node@v2 # this installs nodejs with yarn
@@ -12,5 +16,7 @@ jobs:
         run: yarn
       - name: Build your project
         run: yarn build
+      - name: Deploying the project
+        run: yarn deploy
       - name: Setup Finish
         run: echo "hurray!"

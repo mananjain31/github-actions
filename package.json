@@ -1,7 +1,8 @@
 {
         "scripts": {
                 "start": "snowpack dev",
-                "build": "snowpack build"
+                "build": "snowpack build",
+                "deploy" : "vc build --prod --confirm --token=$VERCEL_TOKEN"
         },
         "dependencies": {
                 "react": "^18.0.0-alpha-64931821a-20210808",
