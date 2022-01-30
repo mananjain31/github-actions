@@ -1,5 +1,5 @@
 
-# github-actions
+# github-actions [![My First Github Action](https://github.com/mananjain31/github-actions/actions/workflows/test.yml/badge.svg)](https://github.com/mananjain31/github-actions/actions/workflows/test.yml)
 Implemented continuous build and deployment pipelines to vercel following steps learned from the course : [CI/CD With GitHub Actions | codedamn](https://codedamn.com/learn/github-actions-ci-cd)
 
 
